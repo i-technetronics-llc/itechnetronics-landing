@@ -1,0 +1,28 @@
+<svg width="803" height="835" viewBox="0 0 803 835" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_f_19_498)">
+<path d="M165.172 305.66C221.951 180.479 369.458 125.028 494.639 181.807L529.531 197.633C654.712 254.411 710.163 401.918 653.384 527.099L638.019 560.976C581.24 686.157 433.733 741.608 308.552 684.83L273.66 669.004C148.479 612.225 93.0282 464.718 149.807 339.537L165.172 305.66Z" fill="url(#paint0_radial_19_498)"/>
+</g>
+<g style="mix-blend-mode:lighten" filter="url(#filter1_f_19_498)">
+<rect x="200" y="132.337" width="463.818" height="463.279" rx="231.639" transform="rotate(-2.76038 200 132.337)" fill="url(#paint1_radial_19_498)"/>
+</g>
+<defs>
+<filter id="filter0_f_19_498" x="0.379547" y="32.3793" width="802.432" height="801.878" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="63.5705" result="effect1_foregroundBlur_19_498"/>
+</filter>
+<filter id="filter1_f_19_498" x="90.484" y="0.496246" width="704.623" height="704.085" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="60.1991" result="effect1_foregroundBlur_19_498"/>
+</filter>
+<radialGradient id="paint0_radial_19_498" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(393.253 337.465) rotate(107.984) scale(473.679 474.666)">
+<stop stop-color="#3B82F6" stop-opacity="0.87"/>
+<stop offset="1" stop-color="#2A0A35" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="paint1_radial_19_498" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(524.562 260.171) rotate(83.176) scale(217.733 255.29)">
+<stop offset="0.447917" stop-color="#915823"/>
+<stop offset="1" stop-color="#F87D0B" stop-opacity="0.06"/>
+</radialGradient>
+</defs>
+</svg>
