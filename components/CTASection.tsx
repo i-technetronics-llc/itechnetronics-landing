@@ -15,7 +15,7 @@ function CTAsection() {
   return (
     <Box bgColor={"rgba(11, 10, 22, 1)"} maxW={'300px'}>
       <Box width='50%'>
-        <Image src={Heroimg} width='2%'  alt="hero image" />
+        <Image src={Heroimg}   alt="hero image" />
       </Box>
     </Box>
   );
