@@ -79,7 +79,7 @@ const Navbar = () => {
                           About Us
                         </ListItem>
                       </Link>
-                      <Link href="/about">
+                      <Link href="/core-values">
                         <ListItem  color={"rgba(255, 255, 255, 1)"}>
                           <ListIcon as={Image} src={Listimg} w={2} h={4} />
                           Core Values
@@ -119,7 +119,7 @@ const Navbar = () => {
                           About Us
                         </ListItem>
                       </Link>
-                  <Link href="/">
+                  <Link href="/core-values">
                         <ListItem color={"rgba(255, 255, 255, 1)"} display={'flex'} alignItems={'center'}>
                           <ListIcon as={Image} src={Listimg} w={2} h={4} color="white"/>
                           Core Values

@@ -9,9 +9,10 @@ import ExploreProducts from "../components/ExploreProducts";
 import JoinJourney from "../components/JoinJourney";
 import Fold from "../components/Fold";
 import Footer from "../components/Footer";
+import CoreValues from "../components/coreValues";
 function index() {
   return (
-    <Box bgColor={"rgb(11,10,22)" }    className={styles.text2}>
+    <Box bgColor={"rgb(11,10,22)" } h='100vh'   className={styles.text2}>
       <Box
         bgColor={"rgb(11,10,22)"}
         display={"flex"}
@@ -22,14 +23,8 @@ function index() {
       >
         <Navbar />
        
-        <CTAsection />
-        <CTA2 />
-        <TargetAudience /> 
-        <Fold />
-        <ExploreProducts />
-        <Fold />
-
-        <JoinJourney />
+        <CoreValues />
+       
         <Footer />
       </Box>
     </Box>
