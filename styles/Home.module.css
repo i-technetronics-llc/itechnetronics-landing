@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap'); */
 .heading{
- font-family: 'Gabriela', sans-serif;
+ font-family: 'Mukta', sans-serif;
 }
 .text{
   font-family: 'Mukta', sans-serif;
-  line-height: 30px;
   font-size: 24px;
   margin-top: 10px;
   border-radius: 20px;

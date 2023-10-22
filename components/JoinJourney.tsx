@@ -21,8 +21,8 @@ import Bg from "../public/assets/JoinBg2.svg";
 import ListIcon2 from "../public/assets/listIcon.svg";
 function JoinJourney() {
   return (
-    <Box color="white" className={styles.text2}>
-      <Box maxWidth="1100px" m="auto">
+    <Box color="white"  m='auto' className={styles.text2}>
+      <Box  m="auto">
         <Text
           fontSize={"4xl"}
           fontWeight={"bold"}
@@ -39,6 +39,7 @@ function JoinJourney() {
           justifyContent="space-between"
           alignItems="center"
           mb="10"
+          gap="10"
    
         >
             <List>
@@ -48,7 +49,7 @@ function JoinJourney() {
           </ListItem>
           </List>
 
-          <Box w='560px'   p='4'   style={{
+          <Box maxWidth='460px'   p='4'   style={{
             backgroundImage: `url(${Bg.src})`,
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
@@ -57,13 +58,14 @@ function JoinJourney() {
             backgroundSize: "cover",
            
           }}>
-          <Box> 
+          <Box w='100%'> 
+
                        <Text mb='6'>Join us on our journey, explore our products, and be a part of the innovation-driven, people-centric revolution in technology. Together, we can build a brighter, more accessible, and equitable future for all.</Text>
            
         
           </Box>
            <List>
-            <ListItem color={"rgba(255, 255, 255, 1)"}textAlign='center' display={'flex'} alignItems={'center'} >
+            <ListItem color={"rgba(255, 255, 255, 1)"}display={'flex'} alignItems={'center'} >
             <ListIcon as={Image} src={ListIcon2} w={2} h={4} color="white"  />
             We are a committed to reshaping the future
           </ListItem>

@@ -22,17 +22,17 @@ import Software from "../public/assets/software.svg";
 import Innovators from "../public/assets/innovators.svg";
 function TargetAudience() {
   return (
-    <Box bgColor={"transparent"} mt='-11rem'>
+    <Box bgColor={"transparent"} mt={{base:"-2rem", md:'-11rem'}}>
       <Box textAlign={"center"} maxWidth={"1000px"} m="auto">
         <Text
-          fontSize={"4xl"}
+          fontSize={{base:'2xl',sm:'3xl', md:"4xl"}}
           fontWeight={"bold"}
           color={"#fff"}
           className={styles.heading}
         >
           Our Target Audience
         </Text>
-        <Text fontSize={"md"} color={"#fff"} className={styles.text}>
+        <Text fontSize={{base:'sm', md:'md'}} mx={'3'} color={"#fff"} className={styles.text}>
           While we serve both B2B and SaaS markets, our primary focus goes
           beyond conventional boundaries. We aim to reach everyone who can
           benefit from our innovative products and solutions, making the world
@@ -41,12 +41,12 @@ function TargetAudience() {
       </Box>
 
       <Box mt='24' >
-      <SimpleGrid templateColumns={{ base:'repeat(1, 1fr)',sm:'repeat(2,1fr)', md:"repeat(3,1fr)"}} m='auto' maxWidth='1100px' spacing={{base:'12', lg:'24'}}>
+      <SimpleGrid templateColumns={{ base:'repeat(1, 1fr)',sm:'repeat(2,1fr)', md:"repeat(3,1fr)"}} mx={{base:'6',lg:'20', }} m maxWidth='1100px' spacing={{base:'6', lg:'14'}}>
       {/* <SimpleGrid spacing={4} m='auto' templateColumns='repeat(auto-fill, minmax(220px, 1fr))'> */}
         <Card
           // w="290px"
           bgColor={"rgba(11, 10, 22, 1)"}
-          height="307px"
+          // height="307px"
           mb="4"
           className={styles.box}
           style={{
@@ -66,7 +66,7 @@ function TargetAudience() {
             _hover={{ bg: "transparent" }}
             textAlign="center"
             mt="230px"
-            fontSize="sm"
+            fontSize={{base:'12px', sm:'sm'}}
             px="4"
             borderRadius="16"
             color="white"
@@ -77,7 +77,7 @@ function TargetAudience() {
         <Card
           // w="290px"
           bgColor={"rgba(11, 10, 22, 1)"}
-          height="307px"
+          // height="307px"
           mb="4"
           className={styles.box}
           style={{
@@ -97,7 +97,7 @@ function TargetAudience() {
             _hover={{ bg: "transparent" }}
             textAlign="center"
             mt="230px"
-            fontSize="sm"
+            fontSize={{base:'12px', sm:'sm'}}
             px="4"
             borderRadius="16"
             color="white"
@@ -108,7 +108,7 @@ function TargetAudience() {
         <Card
           // w="290px"
           bgColor={"rgba(11, 10, 22, 1)"}
-          height="307px"
+          // height="307px"
           mb="4"
           className={styles.box}
           style={{
@@ -128,7 +128,8 @@ function TargetAudience() {
             _hover={{ bg: "transparent" }}
             textAlign="center"
             mt="230px"
-            fontSize="sm"
+            fontSize={{base:'12px', sm:'sm'}}
+
             px="4"
             borderRadius="16"
             color="white"
