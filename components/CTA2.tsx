@@ -8,6 +8,11 @@ import {
   List,
   ListItem,
   ListIcon,
+  SimpleGrid,
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
 } from "@chakra-ui/react";
 import Image from "next/image";
 import Heroimg from "../public/assets/heroBg.svg";
@@ -18,40 +23,46 @@ import Bg from "../public/assets/cto2bg.svg";
 function CTAsection() {
   return (
     <Box bgColor={"rgb(11,10,22)"} >
-        <Box maxWidth="1100px" m="auto" >
-
-    <Flex w='100%' flexDirection={{base:'column', md:'row'}}  justifyContent={'space-between'}h='90vh' m={{base:"10px", md:"auto"}} pt='10' 
- style={{
-    backgroundImage: `url(${Bg.src})`,
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "center",
-    backgroundSize: '550px',
-    paddingTop:'12rem',
-    // backgroundSize: "cover",
-  }}
-    >
-        <Box  >
-        <List lineHeight='20px' >
-          <ListItem color={"rgba(255, 255, 255, 1)"}    display={'flex'} alignItems={'center'} className={styles.text2}>
-            <ListIcon as={Image} src={ListIcon3} w={2} h={4} color="white" />
-            Our Unique Approach
-          </ListItem>
-          <Text color='white' fontSize={{base:'sm', md:'md'}} className={styles.text2}>We are driven by a fellowship of product managers and teams who brainstorm and curate ideas to solve real-world problems.  </Text>
-          </List>
-
-        </Box>
-        <Box  mt='-10rem' >
-        <List lineHeight='20px'>
-          <ListItem color={"rgba(255, 255, 255, 1)"} m='auto' display={'flex'} alignItems={'center'} className={styles.text2}>
-            <ListIcon as={Image} src={ListIcon2} w={2} h={4} color="white" />
-            We Don’t Just Create Technology
-          </ListItem>
-          <Text color='white' fontSize={{base:'sm', md:'md'}}  className={styles.text2}>We create solutions that are friendly, easy to use, affordable, and accessible, ensuring we serve the underserved.</Text>
-          </List>
-
-        </Box>
-    </Flex>
-   </Box>
+       <Box>
+       <SimpleGrid spacing={'4'} templateColumns={{base:'repeat(auto-fill, minmax(250px, 1fr))',sm:'repeat(auto-fill, minmax(300px, 1fr))'}}>
+  <Card bgColor={'rgb(18,17,36)'}>
+<CardHeader>
+    <Box alignItems={'center'} gap={'1'} color={"#fff"} display={'flex'} className={styles.text}>
+    <Text width='10px' height='10px'  borderRadius={'100%'} bgColor='#F87D0B'></Text>
+  <Text fontSize={{base:'12px', md:'16px'}}> Not Another Tech Company</Text> 
+    </Box>
+</CardHeader>
+<CardBody>
+ 
+  <Text color={'white'} fontSize={{base:'18px', md:'20px'}}>We are a dynamic force dedicated to developing cutting-edge hardware and software solutions with a strong focus on people.</Text>
+</CardBody>
+  </Card>
+  <Card bgColor={'rgb(18,17,36)'}>
+<CardHeader>
+    <Box alignItems={'center'} gap={'1'} color={"#fff"} display={'flex'} className={styles.text}>
+    <Text width='10px' height='10px'  borderRadius={'100%'} bgColor='rgba(59, 130, 246, 1)'></Text>
+  <Text fontSize={{base:'12px', md:'16px'}}> We Don’t Just Create Technology</Text> 
+    </Box>
+</CardHeader>
+<CardBody>
+ 
+  <Text color={'white'} fontSize={{base:'18px', md:'20px'}}>We create solutions that are friendly, easy to use, affordable, and accessible, ensuring we serve the underserved.</Text>
+</CardBody>
+  </Card>
+  <Card bgColor={'rgb(18,17,36)'} borderRadius='5px'>
+<CardHeader>
+    <Box alignItems={'center'} gap={'1'} color={"#fff"} display={'flex'} className={styles.text}>
+    <Text width='10px' height='10px'  borderRadius={'100%'} bgColor='#F87D0B'></Text>
+  <Text fontSize={{base:'12px', md:'16px'}}> Our Unique Approach</Text> 
+    </Box>
+</CardHeader>
+<CardBody>
+ 
+  <Text color={'white'} fontSize={{base:'18px', md:'20px'}}>We are driven by a fellowship of product managers and teams who brainstorm and curate ideas to solve real-world problems. </Text>
+</CardBody>
+  </Card>
+</SimpleGrid>
+       </Box>
     </Box>
   );
 }

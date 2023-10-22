@@ -42,11 +42,18 @@ const Navbar = () => {
 
   return (
     <Box
-      bgColor={"rgb(11,10,22)"}
+      bgColor={"rgb(18,17,36)"}
       className={styles.navbar}
       color={"rgba(255, 255, 255, 1)"}
-      pt={'8'}
-      pb={'4'}
+      borderRadius={'20px'}
+      mt='6'
+      // w='100%'
+      // zIndex='99999'
+      // position={'fixed'}
+      
+      // pt={'8'}
+      // pb={'4'}
+      py='6'
       px={'14'}
     //   px={{ base: "4", md: "4", lg: "20" }}
     >
@@ -67,11 +74,11 @@ const Navbar = () => {
                 <DrawerCloseButton color={'white'} />
                 <DrawerHeader>
                 <Link href="/">
-              <Image src={Logo} width={60} alt="Logo" />
+              <Image src={Logo} height={40} width={40} alt="Logo" />
             </Link>
                 </DrawerHeader>
                 <DrawerBody>
-                  <Flex flexDirection="column" alignItems="center">
+                  <Flex flexDirection="column" gap='16' alignItems="center">
                     <List spacing={3}>
                       <Link href="/">
                         <ListItem color={"rgba(255, 255, 255, 1)"}>
@@ -102,6 +109,12 @@ const Navbar = () => {
                 </DrawerBody>
               </DrawerContent>
             </Drawer>
+            <Box>
+            <Link href="/">
+              <Image src={Logo} height={40} width={40} alt="Logo" />
+            </Link>
+          </Box>
+
           </>
         ) : (
           <Box color={"black"}>
@@ -109,7 +122,7 @@ const Navbar = () => {
                 display="flex"
               justifyContent={"space-around"}
               color={"rgba(255, 255, 255, 1)"}
-              gap={"4"}
+              gap={"  10"}
               alignItems={"center"}
             >
                  
@@ -141,7 +154,7 @@ const Navbar = () => {
              display="flex"
            justifyContent={"space-around"}
            color={"rgba(255, 255, 255, 1)"}
-           gap={"4"}
+           gap={"10"}
            alignItems={"center"}
          >
               

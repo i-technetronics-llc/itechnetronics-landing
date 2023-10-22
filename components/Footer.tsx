@@ -25,6 +25,7 @@ function Footer() {
         flexDirection={{ base: "column", md: "row" }}
         m="auto"
         mx='5'
+        gap='10'
         justifyContent="space-between"
         // alignItems="center"
       >
@@ -38,15 +39,16 @@ function Footer() {
               display={"flex"}
               alignItems={"center"}
               className={styles.text2}
+              mt={{base:'4', md:'0'}}
             >
-              <ListIcon as={Image} src={ListIcon3} w={2} h={4} color="white" />
+              <ListIcon as={Image} src={ListIcon3} w={2} h={4}  color="white" />
               Reach out to us!
             </ListItem>
           </List>
-          <Flex gap="2" flexDirection={{ base: "column", md: "row" }}>
+          <Flex gap={{base:'10', md:'2'}} mt={{base:'4', md:'0'}} flexDirection={{ base: "column", md: "row" }}>
             <Button
-              border="1px solid rgba(255, 255, 255, 0.40)"
-              bgColor="transparent"
+              border="3px solid rgb(35,33,67)"
+              bgColor={'rgb(18,17,36)'}
               borderRadius="14px"
               color="white"
               _hover={{ bgColor: "none" }}
@@ -55,8 +57,8 @@ function Footer() {
               info@itechnetronics.com
             </Button>
             <Button
-              border="1px solid rgba(255, 255, 255, 0.40)"
-              bgColor="transparent"
+              border="3px solid rgb(35,33,67)"
+              bgColor={'rgb(18,17,36)'}
               borderRadius="14px"
               color="white"
               w='200px'
@@ -72,7 +74,7 @@ function Footer() {
           justifyContent="space-between"
           alignItems={{base:'flex-start', md:'center'}}
           flexDirection={{ base: "column", md: "row" }}
-          gap='16'  
+          gap='26'  
         >
           <Box>
             <Text color="white">Company</Text>
@@ -80,6 +82,7 @@ function Footer() {
               <ListItem
                 color={"rgba(255, 255, 255, 1)"}
                 display={"flex"}
+                fontSize={'sm'}
                 alignItems={"center"}
               >
                 <ListIcon as={Image} src={Listimg} w={2} h={4} color="white" />
@@ -89,6 +92,8 @@ function Footer() {
                 color={"rgba(255, 255, 255, 1)"}
                 display={"flex"}
                 alignItems={"center"}
+                fontSize={'sm'}
+
               >
                 <ListIcon as={Image} src={Listimg} w={2} h={4} color="white" />
                 About Us
@@ -97,6 +102,8 @@ function Footer() {
                 color={"rgba(255, 255, 255, 1)"}
                 display={"flex"}
                 alignItems={"center"}
+                fontSize={'sm'}
+
               >
                 <ListIcon as={Image} src={Listimg} w={2} h={4} color="white" />
                 Core Values
@@ -107,7 +114,7 @@ function Footer() {
           <Box maxWidth="450px">
             <Text color="white">Address</Text>
         
-            <Box display={"flex"} flexDirection={{ base: "column", md: "row" }} gap='8'>
+            <Box display={"flex"} flexDirection={"row"} gap='8'>
               <Box display={"flex"}>
                 <List>
                   <ListItem
@@ -163,6 +170,7 @@ function Footer() {
           color='rgba(173, 184, 204, 1)'
           textAlign="center"
           fontSize="14px"
+          mt='10'
         >
           &copy;2023. All Rights Reserved & Privacy Statement
         </Text>

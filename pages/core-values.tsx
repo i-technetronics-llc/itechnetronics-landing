@@ -1,13 +1,8 @@
 import React from "react";
 import Navbar from "../components/navbar";
-import CTAsection from '../components/CTAsection'
 import CTA2 from "../components/CTA2";
 import { Box, Flex, Text, Button } from "@chakra-ui/react";
 import styles from "../styles/Home.module.css";
-import TargetAudience from "../components/TargetAudience";
-import ExploreProducts from "../components/ExploreProducts";
-import JoinJourney from "../components/JoinJourney";
-import Fold from "../components/Fold";
 import Footer from "../components/Footer";
 import CoreValues from "../components/coreValues";
 function index() {

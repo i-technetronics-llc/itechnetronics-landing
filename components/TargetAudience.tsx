@@ -22,7 +22,7 @@ import Software from "../public/assets/software.svg";
 import Innovators from "../public/assets/innovators.svg";
 function TargetAudience() {
   return (
-    <Box bgColor={"transparent"} mt={{base:"-2rem", md:'-11rem'}}>
+    <Box bgColor={"transparent"} >
       <Box textAlign={"center"} maxWidth={"1000px"} m="auto">
         <Text
           fontSize={{base:'2xl',sm:'3xl', md:"4xl"}}
@@ -41,7 +41,7 @@ function TargetAudience() {
       </Box>
 
       <Box mt='24' >
-      <SimpleGrid templateColumns={{ base:'repeat(1, 1fr)',sm:'repeat(2,1fr)', md:"repeat(3,1fr)"}} mx={{base:'6',lg:'20', }} m maxWidth='1100px' spacing={{base:'6', lg:'14'}}>
+      <SimpleGrid templateColumns={{ base:'repeat(1, 1fr)',sm:'repeat(2,1fr)', md:"repeat(3,1fr)"}} mx={{base:'6',lg:'20', }}  maxWidth='1100px' spacing={{base:'6', lg:'14'}}>
       {/* <SimpleGrid spacing={4} m='auto' templateColumns='repeat(auto-fill, minmax(220px, 1fr))'> */}
         <Card
           // w="290px"
@@ -55,11 +55,13 @@ function TargetAudience() {
             backgroundPosition: "center",
             borderRadius: "20px",
             border: "3px solid #FFF",
+
+
             backgroundSize: "cover",
           }}
         >
           <Button
-            bg="transparent"
+            bg='rgba(28, 24, 53, 0.81)'
             className={styles.button}
             mx="2"
             py="7"
@@ -90,7 +92,7 @@ function TargetAudience() {
           }}
         >
           <Button
-            bg="transparent"
+            bg='rgba(28, 24, 53, 0.81)'
             className={styles.button}
             mx="2"
             py="7"
@@ -121,7 +123,7 @@ function TargetAudience() {
           }}
         >
           <Button
-            bg="transparent"
+          bg='rgba(28, 24, 53, 0.81)'
             className={styles.button}
             mx="2"
             py="7"

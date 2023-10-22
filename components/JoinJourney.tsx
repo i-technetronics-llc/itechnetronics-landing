@@ -32,53 +32,13 @@ function JoinJourney() {
         >
           Join Us on Our Journey
         </Text>
+        <Card bgColor={'rgb(30,28,56)'} borderRadius='12px' mt='10'>
 
-        <Flex
-        mt='16'
-          flexDirection={{ base: "column", lg: "row" }}
-          justifyContent="space-between"
-          alignItems="center"
-          mb="10"
-          gap="10"
-   
-        >
-            <List>
-          <ListItem color={"rgba(255, 255, 255, 1)"}  display={'flex'} alignItems={'center'}>
-            <ListIcon as={Image} src={ListIcon2} w={2} h={4} color="white" />
-            We are more than a tech company
-          </ListItem>
-          </List>
-
-          <Box maxWidth='460px'   p='4'   style={{
-            backgroundImage: `url(${Bg.src})`,
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
-            // borderRadius: "20px",
-            border: "0.5px solid transparent",
-            backgroundSize: "cover",
-           
-          }}>
-          <Box w='100%'> 
-
-                       <Text mb='6'>Join us on our journey, explore our products, and be a part of the innovation-driven, people-centric revolution in technology. Together, we can build a brighter, more accessible, and equitable future for all.</Text>
-           
-        
-          </Box>
-           <List>
-            <ListItem color={"rgba(255, 255, 255, 1)"}display={'flex'} alignItems={'center'} >
-            <ListIcon as={Image} src={ListIcon2} w={2} h={4} color="white"  />
-            We are a committed to reshaping the future
-          </ListItem>
-          </List>
-          </Box>
-          <List>
-          <ListItem color={"rgba(255, 255, 255, 1)"} display={'flex'} alignItems={'center'}>
-            <ListIcon as={Image} src={ListIcon2} w={2} h={4} color="white" />
-            We are a movement
-          </ListItem>
-          </List>
-
-        </Flex>
+<CardBody  maxWidth={'1000px'} >
+ 
+  <Text color={'white'}p='46px' fontSize={{base:'16px', md:'18px'}} maxWidth={'700px'} textAlign={'center'}>Join us on our journey, explore our products, and be a part of the innovation-driven, people-centric revolution in technology. Together, we can build a brighter, more accessible, and equitable future for all.</Text>
+</CardBody>
+  </Card>
       </Box>
     </Box>
   );
