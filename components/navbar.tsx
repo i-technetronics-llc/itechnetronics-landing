@@ -65,7 +65,7 @@ const Navbar = () => {
             <IconButton
               aria-label="Open menu"
               icon={<HamburgerIcon />}
-              size="lg"
+              size="5xl"
               variant="ghost"
               color="white"
               onClick={onOpen}
@@ -100,7 +100,7 @@ const Navbar = () => {
                           Products
                         </ListItem>
                       </Link>
-                      <Link href="/signup">
+                      <Link href="/contact">
                         <ListItem  color={"rgba(255, 255, 255, 1)"}>
                           <ListIcon as={Image} src={Listimg} w={2} h={4} />
                           Contact Us
@@ -166,7 +166,7 @@ const Navbar = () => {
                        Products
                      </ListItem>
                    </Link>
-               <Link href="/">
+               <Link href="/contact">
                      <ListItem color={"rgba(255, 255, 255, 1)"} display={'flex'} alignItems={'center'}>
                        <ListIcon as={Image} src={Listimg} w={2} h={4} color="white"/>
                        Contact Us

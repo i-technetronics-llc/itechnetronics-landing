@@ -20,7 +20,7 @@ import Explore from "../public/assets/Subtract.svg";
 import Image from "next/image";
 import Ant from "../public/assets/antp1.png";
 import Pennywise from "../public/assets/pennywise.png";
-import AntConfig from "../public/assets/antconfig.png";
+import AntConfig from "../public/assets/antConfig.png";
 import Antfi from "../public/assets/anfi.png";
 import Link from "next/link";
 
