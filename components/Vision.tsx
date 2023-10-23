@@ -33,7 +33,6 @@ function JoinJourney() {
           <CardHeader>
             <Text
               fontSize={"4xl"}
-              fontWeight={"bold"}
               color={"#fff"}
               textAlign="center"
               className={styles.heading}
@@ -59,7 +58,6 @@ function JoinJourney() {
           <CardHeader>
             <Text
               fontSize={"4xl"}
-              fontWeight={"bold"}
               color={"#fff"}
               textAlign="center"
               className={styles.heading}

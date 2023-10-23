@@ -54,7 +54,6 @@ function ProductsPage() {
             <Text
               className={styles.heading}
               fontSize={{ base: "3xl", lg: "4xl" }}
-              fontWeight="bold"
               ml={{ base: "7", lg: "8" }}
               mt={{ base: "-10", sm: "-8", lg: "-14" }}
             >
@@ -72,7 +71,6 @@ function ProductsPage() {
         >
           <CardBody w="100%">
             <Text
-              className={styles.heading}
               fontSize={{ base: "16px", sm: "20px" }}
               mb="16"
               maxWidth={"669px"}
@@ -119,9 +117,9 @@ function ProductsPage() {
               <Image src={Explore} alt="B2B" />
             </Box>
             <Text
-              className={styles.heading}
               fontSize={{ base: "3xl", lg: "4xl" }}
-              fontWeight="bold"
+              
+              className={styles.heading}
               ml={{ base: "7", lg: "8" }}
               mt={{ base: "-10", sm: "-8", lg: "-14" }}
             >
@@ -141,7 +139,6 @@ function ProductsPage() {
         >
           <CardBody w="100%">
             <Text
-              className={styles.heading}
               fontSize={{ base: "16px", sm: "20px" }}
               mb="16"
               maxWidth={"669px"}
@@ -185,9 +182,9 @@ function ProductsPage() {
               <Image src={Explore} alt="B2B" />
             </Box>
             <Text
-              className={styles.heading}
               fontSize={{ base: "3xl", lg: "4xl" }}
-              fontWeight="bold"
+              className={styles.heading}
+
               ml={{ base: "7", lg: "8" }}
               mt={{ base: "-10", sm: "-8", lg: "-14" }}
             >
@@ -206,7 +203,6 @@ function ProductsPage() {
         >
           <CardBody w="100%">
             <Text
-              className={styles.heading}
               fontSize={{ base: "16px", sm: "20px" }}
               mb="16"
               maxWidth={"669px"}
@@ -253,7 +249,6 @@ function ProductsPage() {
             <Text
               className={styles.heading}
               fontSize={{ base: "3xl", lg: "4xl" }}
-              fontWeight="bold"
               ml={{ base: "7", lg: "8" }}
               mt={{ base: "-10", sm: "-8", lg: "-14" }}
             >
@@ -273,7 +268,6 @@ function ProductsPage() {
         >
           <CardBody w="100%">
             <Text
-              className={styles.heading}
               fontSize={{ base: "16px", sm: "20px" }}
               mb="16"
               maxWidth={"669px"}

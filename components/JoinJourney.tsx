@@ -26,7 +26,6 @@ function JoinJourney() {
       <Box  m="auto">
         <Text
           fontSize={"4xl"}
-          fontWeight={"bold"}
           
           color={"#fff"}
           textAlign="center"

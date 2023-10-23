@@ -26,7 +26,6 @@ function TargetAudience() {
       <Box textAlign={"center"} maxWidth={"1000px"} m="auto">
         <Text
           fontSize={{base:'2xl',sm:'3xl', md:"4xl"}}
-          fontWeight={"bold"}
           color={"#fff"}
           className={styles.heading}
         >

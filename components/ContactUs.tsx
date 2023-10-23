@@ -23,7 +23,6 @@ function JoinJourney() {
   return (
     <Box color="white"  maxWidth={'1200px'} bgColor={"rgb(11,10,22)" } m='auto'   mb='24' className={styles.text2}>   <Text
           fontSize={"4xl"}
-          fontWeight={"bold"}
           
           color={"#fff"}
           mb='4'

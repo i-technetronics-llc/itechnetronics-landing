@@ -22,13 +22,12 @@ import ListIcon2 from "../public/assets/listIcon.svg";
 import Heroimg from "../public/assets/Abouthero.svg";
 function About() {
   return (
-    <Box color="white" m="auto" className={styles.text2} h='100vh'>
+    <Box color="white" m="auto" className={styles.text2}  maxWidth={'1200px'}>
 
       <Box display={{base:'flex'}} justifyContent={'space-between'} gap='24'>
       <Box maxWidth={'531px'}>
         <Text
           fontSize={"5xl"}
-          fontWeight={"bold"}
           color={"#fff"}
         mb='8'
           className={styles.heading}

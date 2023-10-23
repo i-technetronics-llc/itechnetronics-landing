@@ -23,7 +23,6 @@ function CTAsection() {
         </Box>
         <Text
           fontSize={{ base: "2xl", sm: "3xl", md: "5xl" }}
-          fontWeight={"bold"}
           color={"#fff"}
           textAlign={"center"}
           className={styles.heading}

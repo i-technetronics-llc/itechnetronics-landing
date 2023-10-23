@@ -51,7 +51,6 @@ function ExploreProducts() {
           >
                   <Text
           fontSize={"4xl"}
-          fontWeight={"bold"}
           color={"#fff"}
           ml={{ base: "0", md: "6" }}
           textAlign={{ base: "center", md: "left" }}
