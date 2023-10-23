@@ -22,7 +22,7 @@ function CTAsection() {
         <Image src={Logo} alt="hero" />
         </Box>
         <Text
-          fontSize={{ base: "2xl", sm: "3xl", md: "4xl" }}
+          fontSize={{ base: "2xl", sm: "3xl", md: "5xl" }}
           fontWeight={"bold"}
           color={"#fff"}
           textAlign={"center"}

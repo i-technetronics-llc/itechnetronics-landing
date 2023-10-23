@@ -22,7 +22,6 @@ import Logo from "../public/assets/i-tech.png";
 import Listimg from "../public/assets/list.svg";
 import Image from "next/image";
 import styles from "../styles/Navbar.module.css";
-
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [isMobile, setIsMobile] = useState(false);
@@ -80,7 +79,7 @@ const Navbar = () => {
                 <DrawerBody>
                   <Flex flexDirection="column" gap='16' alignItems="center">
                     <List spacing={3}>
-                      <Link href="/">
+                      <Link href="/about">
                         <ListItem color={"rgba(255, 255, 255, 1)"}>
                           <ListIcon as={Image} src={Listimg} w={2} h={4} color="white"/>
                           About Us
@@ -92,7 +91,7 @@ const Navbar = () => {
                           Core Values
                         </ListItem>
                       </Link>
-                      <Link href="/about">
+                      <Link href="/products">
                         <ListItem  color={"rgba(255, 255, 255, 1)"}>
                           <ListIcon as={Image} src={Listimg} w={2} h={4} />
                           Products
@@ -125,10 +124,9 @@ const Navbar = () => {
               gap={"  10"}
               alignItems={"center"}
             >
-                 
-                  <Link href="/">
+                  
+                  <Link href="/about">
                         <ListItem color={"rgba(255, 255, 255, 1)"} display={'flex'} alignItems={'center'}>
-                          <ListIcon as={Image} src={Listimg} w={2} h={4} color="white"/>
                           About Us
                         </ListItem>
                       </Link>
@@ -158,9 +156,10 @@ const Navbar = () => {
            alignItems={"center"}
          >
               
-               <Link href="/">
-                     <ListItem color={"rgba(255, 255, 255, 1)"} display={'flex'} alignItems={'center'}>
-                       <ListIcon as={Image} src={Listimg} w={2} h={4} fontSize={'16px'} color="white"/>
+               <Link href="/products">
+                     <ListItem color={"rgba(255, 255, 255, 1)"} display={'flex'} gap='2' alignItems={'center'}>
+                     <Text width='8px' height='8px'  borderRadius={'100%'} bgColor='#FFF'></Text>
+
                        Products
                      </ListItem>
                    </Link>

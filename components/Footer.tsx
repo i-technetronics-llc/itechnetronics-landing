@@ -19,7 +19,8 @@ import Logo from "../public/assets/i-tech.png";
 import Listimg from "../public/assets/list.svg";
 function Footer() {
   return (
-    <Box>
+    <Box     bgColor={"rgb(18,17,36)"}
+    py='14'>
       <Box
         display={{ base: "flex" }}
         flexDirection={{ base: "column", md: "row" }}
@@ -27,6 +28,7 @@ function Footer() {
         mx='5'
         gap='10'
         justifyContent="space-between"
+    
         // alignItems="center"
       >
         <Box>
@@ -74,7 +76,7 @@ function Footer() {
           justifyContent="space-between"
           alignItems={{base:'flex-start', md:'center'}}
           flexDirection={{ base: "column", md: "row" }}
-          gap='26'  
+          gap='66'  
         >
           <Box>
             <Text color="white">Company</Text>
