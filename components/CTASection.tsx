@@ -36,7 +36,7 @@ function CTAsection() {
         <Box
           m="auto"
           w={{base:'100%', md:"80%"}}
-          border={"30px solid black"}
+          border={"30px solid rgb(18, 17, 36)"}
           borderRadius="5px"
           display={{base:'none', sm:'block'}}
 

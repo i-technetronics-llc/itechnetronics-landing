@@ -23,8 +23,8 @@ import Bg from "../public/assets/cto2bg.svg";
 function CTAsection() {
   return (
     <Box bgColor={"rgb(11,10,22)"} >
-       <Box>
-       <SimpleGrid spacing={'4'} templateColumns={{base:'repeat(auto-fill, minmax(250px, 1fr))',sm:'repeat(auto-fill, minmax(300px, 1fr))'}}>
+       <Box maxWidth={'1200px'} m='auto'>
+       <SimpleGrid spacing={'4'} m='auto'  templateColumns={{base:'repeat(auto-fill, minmax(250px, 1fr))',sm:'repeat(auto-fill, minmax(350px, 1fr))'}}>
   <Card bgColor={'rgb(18,17,36)'}>
 <CardHeader>
     <Box alignItems={'center'} gap={'1'} color={"#fff"} display={'flex'} className={styles.text}>

@@ -46,6 +46,9 @@ const Navbar = () => {
       color={"rgba(255, 255, 255, 1)"}
       borderRadius={'20px'}
       mt='6'
+      mx={{base:'0', md:'10'}}
+      // maxWidth={'1200px'}
+      // m={'auto'}
       // w='100%'
       // zIndex='99999'
       // position={'fixed'}

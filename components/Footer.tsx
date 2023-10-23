@@ -20,7 +20,7 @@ import Listimg from "../public/assets/list.svg";
 function Footer() {
   return (
     <Box     bgColor={"rgb(18,17,36)"}
-    py='14'>
+    py='10'>
       <Box
         display={{ base: "flex" }}
         flexDirection={{ base: "column", md: "row" }}
@@ -172,7 +172,7 @@ function Footer() {
           color='rgba(173, 184, 204, 1)'
           textAlign="center"
           fontSize="14px"
-          mt='10'
+          mt='46px'
         >
           &copy;2023. All Rights Reserved & Privacy Statement
         </Text>
