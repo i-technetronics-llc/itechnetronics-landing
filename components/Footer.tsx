@@ -19,7 +19,7 @@ import Logo from "../public/assets/i-tech.png";
 import Listimg from "../public/assets/list.svg";
 function Footer() {
   return (
-    <Box     bgColor={"rgb(18,17,36)"}
+    <Box      bgColor={"rgb(18,17,36)"}
     py='10'>
       <Box
         display={{ base: "flex" }}
