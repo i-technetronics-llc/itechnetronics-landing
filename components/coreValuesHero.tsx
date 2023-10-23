@@ -22,7 +22,7 @@ import ListIcon2 from "../public/assets/listIcon.svg";
 import { Icon, createIcon } from '@chakra-ui/react'
 function JoinJourney() {
   return (
-    <Box color="white"  m='auto' className={styles.text2}>
+    <Box color="white" maxWidth={'1200px'} m='auto' className={styles.text2}>
       <Box  m="auto">
         <Card bgColor={'rgb(30,28,56)'} borderRadius='12px' mt='10'>
 
