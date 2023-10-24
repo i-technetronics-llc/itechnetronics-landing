@@ -31,7 +31,7 @@ function TargetAudience() {
         >
           Our Target Audience
         </Text>
-        <Text fontSize={{base:'sm', md:'md'}} mx={'3'} color={"#fff"} className={styles.text}>
+        <Text fontSize={{base:'sm', md:'24px'}} lineHeight='39px' mx={'3'} color={"#fff"} className={styles.text}>
           While we serve both B2B and SaaS markets, our primary focus goes
           beyond conventional boundaries. We aim to reach everyone who can
           benefit from our innovative products and solutions, making the world
@@ -44,6 +44,7 @@ function TargetAudience() {
       {/* <SimpleGrid spacing={4} m='auto' templateColumns='repeat(auto-fill, minmax(220px, 1fr))'> */}
         <Card
           // w="290px"
+          maxWidth='420px'
           bgColor={"rgba(11, 10, 22, 1)"}
           // height="307px"
           mb="4"
@@ -67,8 +68,9 @@ function TargetAudience() {
             _hover={{ bg: "transparent" }}
             textAlign="center"
             mt="230px"
-            fontSize={{base:'12px', sm:'sm'}}
+            fontSize={{base:'12px', sm:'18px'}}
             px="4"
+            lineHeight='38px'
             borderRadius="16"
             color="white"
           >
@@ -80,6 +82,7 @@ function TargetAudience() {
           bgColor={"rgba(11, 10, 22, 1)"}
           // height="307px"
           mb="4"
+          maxWidth='420px'
           className={styles.box}
           style={{
             backgroundImage: `url(${Software.src})`,
@@ -98,8 +101,9 @@ function TargetAudience() {
             _hover={{ bg: "transparent" }}
             textAlign="center"
             mt="230px"
-            fontSize={{base:'12px', sm:'sm'}}
+            fontSize={{base:'12px', sm:'18px'}}
             px="4"
+            lineHeight='38px'
             borderRadius="16"
             color="white"
           >
@@ -110,6 +114,7 @@ function TargetAudience() {
           // w="290px"
           bgColor={"rgba(11, 10, 22, 1)"}
           // height="307px"
+          maxWidth='420px'
           mb="4"
           className={styles.box}
           style={{
@@ -129,8 +134,9 @@ function TargetAudience() {
             _hover={{ bg: "transparent" }}
             textAlign="center"
             mt="230px"
-            fontSize={{base:'12px', sm:'sm'}}
-
+            fontSize={{base:'12px', sm:'18px'}}
+            lineHeight='38px'
+            
             px="4"
             borderRadius="16"
             color="white"

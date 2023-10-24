@@ -53,7 +53,7 @@ function ProductsPage() {
             </Box>
             <Text
               className={styles.heading}
-              fontSize={{ base: "3xl", lg: "4xl" }}
+              fontSize={{ base: "3xl", lg: "3xl" }}
               ml={{ base: "7", lg: "8" }}
               mt={{ base: "-10", sm: "-8", lg: "-14" }}
             >
@@ -117,7 +117,7 @@ function ProductsPage() {
               <Image src={Explore} alt="B2B" />
             </Box>
             <Text
-              fontSize={{ base: "3xl", lg: "4xl" }}
+             fontSize={{ base: "3xl", lg: "3xl" }}
               
               className={styles.heading}
               ml={{ base: "7", lg: "8" }}
@@ -182,7 +182,8 @@ function ProductsPage() {
               <Image src={Explore} alt="B2B" />
             </Box>
             <Text
-              fontSize={{ base: "3xl", lg: "4xl" }}
+                           fontSize={{ base: "3xl", lg: "3xl" }}
+
               className={styles.heading}
 
               ml={{ base: "7", lg: "8" }}
@@ -248,7 +249,8 @@ function ProductsPage() {
             </Box>
             <Text
               className={styles.heading}
-              fontSize={{ base: "3xl", lg: "4xl" }}
+              fontSize={{ base: "3xl", lg: "3xl" }}
+
               ml={{ base: "7", lg: "8" }}
               mt={{ base: "-10", sm: "-8", lg: "-14" }}
             >

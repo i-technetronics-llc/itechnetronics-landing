@@ -34,7 +34,7 @@ function CTAsection() {
 </CardHeader>
 <CardBody>
  
-  <Text color={'white'} fontSize={{base:'18px', md:'20px'}}>We are a dynamic force dedicated to developing cutting-edge hardware and software solutions with a strong focus on people.</Text>
+  <Text color={'white'} fontSize={{base:'18px', md:'24px'}} lineHeight='39px'>We are a dynamic force dedicated to developing cutting-edge hardware and software solutions with a strong focus on people.</Text>
 </CardBody>
   </Card>
   <Card bgColor={'rgb(18,17,36)'}>
@@ -46,7 +46,7 @@ function CTAsection() {
 </CardHeader>
 <CardBody>
  
-  <Text color={'white'} fontSize={{base:'18px', md:'20px'}}>We create solutions that are friendly, easy to use, affordable, and accessible, ensuring we serve the underserved.</Text>
+  <Text color={'white'} fontSize={{base:'18px', md:'24px'}} lineHeight='39px'>We create solutions that are friendly, easy to use, affordable, and accessible, ensuring we serve the underserved.</Text>
 </CardBody>
   </Card>
   <Card bgColor={'rgb(18,17,36)'} borderRadius='5px'>
@@ -58,7 +58,7 @@ function CTAsection() {
 </CardHeader>
 <CardBody>
  
-  <Text color={'white'} fontSize={{base:'18px', md:'20px'}}>We are driven by a fellowship of product managers and teams who brainstorm and curate ideas to solve real-world problems. </Text>
+  <Text color={'white'} fontSize={{base:'18px', md:'24px'}} lineHeight='39px'>We are driven by a fellowship of product managers and teams who brainstorm and curate ideas to solve real-world problems. </Text>
 </CardBody>
   </Card>
 </SimpleGrid>

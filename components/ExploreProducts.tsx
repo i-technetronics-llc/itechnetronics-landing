@@ -50,7 +50,8 @@ function ExploreProducts() {
             spacing={{ base: "12", lg: "16" }}
           >
                   <Text
-          fontSize={"4xl"}
+          fontSize={"54px"}
+          lineHeight='52px'
           color={"#fff"}
           ml={{ base: "0", md: "6" }}
           textAlign={{ base: "center", md: "left" }}
@@ -81,7 +82,7 @@ function ExploreProducts() {
                 >
                   AntBuilder
                 </Text>
-                <Text maxWidth={"260px"} fontSize="16px" mt="2">
+                <Text maxWidth={"260px"} lineHeight='26px' fontSize="16px" mt="2">
                   Our flagship product designed to shape the future with
                   innovative technology solutions by empowering businesses and
                   individuals with user-friendly, affordable, and accessible
@@ -113,7 +114,7 @@ function ExploreProducts() {
                 >
                   AntConfig
                 </Text>
-                <Text maxWidth={"260px"} fontSize="16px" mt="2">
+                <Text maxWidth={"260px"} lineHeight='26px' fontSize="16px" mt="2">
                   A developer-centric feature flag service with unlimited team
                   size, awesome support, and a reasonable price tag.
                 </Text>
@@ -143,7 +144,7 @@ function ExploreProducts() {
                 >
                   PennyWise
                 </Text>
-                <Text maxWidth={"260px"} fontSize="16px" mt="2">
+                <Text maxWidth={"260px"} lineHeight='26px' fontSize="16px" mt="2">
                   (Adashe/Ajo/Esusu); Revolutionizing financial management with
                   our suite of digital solutions.
                 </Text>
@@ -174,7 +175,7 @@ function ExploreProducts() {
                 >
                   AntFi
                 </Text>
-                <Text maxWidth={"260px"} fontSize="16px" mt="2">
+                <Text maxWidth={"260px"} lineHeight='26px' fontSize="16px" mt="2">
                   Empowering businesses and individuals with cross-board finance
                   solutions, making financial management simpler and more
                   efficient.

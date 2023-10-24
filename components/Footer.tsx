@@ -40,8 +40,10 @@ function Footer() {
               color={"rgba(255, 255, 255, 1)"}
               display={"flex"}
               alignItems={"center"}
+              fontSize={'16px'}
               className={styles.text2}
-              mt={{base:'4', md:'0'}}
+              my={{base:'4', md:'11px'}}
+              
             >
               <ListIcon as={Image} src={ListIcon3} w={2} h={4}  color="white" />
               Reach out to us!
@@ -53,6 +55,9 @@ function Footer() {
               bgColor={'rgb(18,17,36)'}
               borderRadius="14px"
               color="white"
+              fontSize={'16px'}
+              fontWeight='400'
+
               _hover={{ bgColor: "none" }}
               w='200px'
             >
@@ -64,6 +69,8 @@ function Footer() {
               borderRadius="14px"
               color="white"
               w='200px'
+              fontSize={'16px'}
+              fontWeight='400'
               _hover={{ bgColor: "none" }}
             >
               sales@itechnetronics.com
@@ -78,14 +85,19 @@ function Footer() {
           flexDirection={{ base: "column", md: "row" }}
           gap='66'  
         >
-          <Box>
-            <Text color="white">Company</Text>
-            <List>
+          <Box   >
+            <Text mb='10px' color="white">Company</Text>
+            <List display={{ base: "flex" }}
+          justifyContent="space-between"
+          flexDirection={{ base: "column"}}
+          gap='10px' >
               <ListItem
                 color={"rgba(255, 255, 255, 1)"}
                 display={"flex"}
-                fontSize={'sm'}
+                fontSize={'16px'}
+                lineHeight='26px'
                 alignItems={"center"}
+
               >
                 <ListIcon as={Image} src={Listimg} w={2} h={4} color="white" />
                 Projects
@@ -94,7 +106,8 @@ function Footer() {
                 color={"rgba(255, 255, 255, 1)"}
                 display={"flex"}
                 alignItems={"center"}
-                fontSize={'sm'}
+                fontSize={'16px'}
+                lineHeight='26px'
 
               >
                 <ListIcon as={Image} src={Listimg} w={2} h={4} color="white" />
@@ -104,7 +117,8 @@ function Footer() {
                 color={"rgba(255, 255, 255, 1)"}
                 display={"flex"}
                 alignItems={"center"}
-                fontSize={'sm'}
+                fontSize={'16px'}
+                lineHeight='26px'
 
               >
                 <ListIcon as={Image} src={Listimg} w={2} h={4} color="white" />
@@ -133,8 +147,8 @@ function Footer() {
                     />
                     USA
                   </ListItem>
-                  <Text color="white" display="block" fontSize='14px'>
-                    8 The Green Suite R Dover, DE 19901 USA
+                  <Text color="white" display="block" fontSize='16px' fontWeight='500px'>
+                    8 The Green Suite R Dover, DE 19901 <br /> USA
                   </Text>
                 </List>
               </Box>
@@ -157,8 +171,8 @@ function Footer() {
                     />
                     Nigeria
                   </ListItem>
-                  <Text color="white" fontSize='14px'>
-                    House 15, RichyGold Homes and Estate Apo, Dutse  Abuja, FCT,
+                  <Text color="white" fontSize='16px' fontWeight='500px'>
+                    House 15, RichyGold Homes and Estate <br /> Apo, Dutse  <br /> Abuja, FCT,
                     NIgeria
                   </Text>
                 </List>
@@ -171,8 +185,9 @@ function Footer() {
 <Text
           color='rgba(173, 184, 204, 1)'
           textAlign="center"
-          fontSize="14px"
-          mt='46px'
+          fontSize="16px"
+          mt='62px'
+          mb='41px'
         >
           &copy;2023. All Rights Reserved & Privacy Statement
         </Text>

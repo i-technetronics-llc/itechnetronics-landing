@@ -31,7 +31,7 @@ function JoinJourney() {
         >
          Reach out to us!
         </Text>
-    <Box display={'flex'} maxWidth={'1200px'}  border={'1px solid red'} flexDir={{base:'column',md:'row'}}justifyContent={'space-between'} gap='6' alignItems={'center'}>
+    <Box display={'flex'} maxWidth={'1200px'}  flexDir={{base:'column',md:'row'}}justifyContent={'space-between'} gap='6' alignItems={'center'}>
       <Box >
    
         <Text color={'white'} mb='20px' fontSize={{base:'16px', md:'22px'}} lineHeight={'32px'} maxWidth={'600px'} >Join us on our journey, explore our products, and be a part of the innovation-driven, people-centric revolution in technology. Together, we can build a brighter, more accessible, and equitable future for all.</Text>
@@ -61,7 +61,7 @@ function JoinJourney() {
       </Box>
 
 
-      <SimpleGrid spacing={'6'} m='auto'   templateColumns={{base:'repeat(auto-fill, minmax(250px, 1fr))',sm:'repeat(auto-fill, minmax(250px, 1fr))'}}>
+      <SimpleGrid spacing={'6'} m='auto' mt='-12'   templateColumns={{base:'repeat(auto-fill, minmax(250px, 1fr))',sm:'repeat(auto-fill, minmax(250px, 1fr))'}}>
   <Card bgColor={'rgb(18,17,36)'}>
 <CardHeader>
     <Box alignItems={'center'} gap={'1'} color={"#fff"} display={'flex'} className={styles.text}>
@@ -85,9 +85,9 @@ function JoinJourney() {
 </CardHeader>
 <CardBody>
  
-  <Text color={'white'} fontSize={{base:'18px'}}>House 15, RichyGold</Text>
-  <Text color={'white'} fontSize={{base:'18px'}}>Homes and Estate</Text>
-  <Text color={'white'} fontSize={{base:'18px'}}>Apo, Dutse,Abuja, FCT, NIgeria</Text>
+  <Text color={'white'} fontSize={{base:'18px'}}></Text>
+  <Text color={'white'} fontSize={{base:'18px'}}>House 15, RichyGold Homes and Estate Apo, Dutse,Abuja, FCT, NIgeria</Text>
+  <Text color={'white'} fontSize={{base:'18px'}}></Text>
   {/* <Text color={'white'} fontSize={{base:'18px'}}></Text> */}
 </CardBody>
   </Card>

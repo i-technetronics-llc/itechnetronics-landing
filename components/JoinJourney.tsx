@@ -25,7 +25,7 @@ function JoinJourney() {
     <Box>
       <Box  m="auto">
         <Text
-          fontSize={"4xl"}
+          fontSize={"54px"}
           
           color={"#fff"}
           textAlign="center"
@@ -37,7 +37,7 @@ function JoinJourney() {
 
 <CardBody  >
  
-  <Text color={'white'}p='46px' fontSize={{base:'16px', md:'18px'}} maxWidth={'680px'} m='auto' textAlign={'center'}>Join us on our journey, explore our products, and be a part of the innovation-driven, people-centric revolution in technology. Together, we can build a brighter, more accessible, and equitable future for all.</Text>
+  <Text color={'white'}p='46px' fontSize={{base:'16px', md:'26px'}} maxWidth={'680px'} m='auto' textAlign={'center'}>Join us on our journey, explore our products, and be a part of the innovation-driven, people-centric revolution in technology. Together, we can build a brighter, more accessible, and equitable future for all.</Text>
 </CardBody>
   </Card>
       </Box>
