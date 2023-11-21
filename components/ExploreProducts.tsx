@@ -24,20 +24,38 @@ import AntConfig from "../public/assets/antConfig.png";
 import Antfi from "../public/assets/anfi.png";
 import Link from "next/link";
 
+
+ const CardProps = [
+  {
+    image: Explore,
+    title: "AntBuilder",
+    description:
+      "Our flagship product designed to shape the future with innovative technology solutions by empowering businesses and individuals with user-friendly, affordable, and accessible software.",
+  },
+  {
+    image: Explore,
+    title: "AntConfig",
+    description:
+      "A developer-centric feature flag service with unlimited team size, awesome support, and a reasonable price tag.",
+  },
+  {
+    image: Explore,
+    title: "Pennywise",
+    description:
+      "(Adashe/Ajo/Esusu); Revolutionizing financial management with our suite of digital solutions.",
+  },
+  {
+    image: Explore,
+    title: "AntFi",
+    description:
+      "Empowering businesses and individuals with cross-board finance solutions, making financial management simpler and more efficient.",
+  },
+];
+
 function ExploreProducts() {
   return (
     <Box color="white">
       <Box maxWidth="1150px" m="auto">
-        {/* <Text
-          fontSize={"4xl"}
-          fontWeight={"bold"}
-          color={"#fff"}
-          ml={{ base: "0", md: "6" }}
-          textAlign={{ base: "center", md: "left" }}
-          className={styles.heading}
-        >
-          Explore Our <br /> Products
-        </Text> */}
         <Box mb="10" mt="16">
           <SimpleGrid
             templateColumns={{
@@ -49,144 +67,59 @@ function ExploreProducts() {
             maxWidth="1150px"
             spacing={{ base: "12", lg: "16" }}
           >
-                  <Text
-          fontSize={"54px"}
-          lineHeight='52px'
-          color={"#fff"}
-          ml={{ base: "0", md: "6" }}
-          textAlign={{ base: "center", md: "left" }}
-          className={styles.heading}
-        >
-          Explore Our <br /> Products
-        </Text>
-            <Card
-              w="80%"
-              m="auto"
-              h="400px"
-              bgColor="black"
-              p="0"
-              border="3px solid black"
-              borderRadius="20px"
-              color="white"
+            <Text
+              fontSize={"54px"}
+              lineHeight="52px"
+              color={"#fff"}
+              textAlign={{ base: "center", md: "left" }}
+              className={styles.heading}
             >
-              <CardBody w="100%">
-                <Box w={"full"}>
-                  <Image src={Ant} alt="B2B" />
-                </Box>
-                {/* <Text className={styles.heading} fontSize='2xl' fontWeight='bold' ml='8' mt='-10'>AntBuilder</Text> */}
-                <Text
-                  className={styles.heading}
-                  fontSize="2xl"
-                  fontWeight="bold"
-                  mt="4"
-                >
-                  AntBuilder
-                </Text>
-                <Text maxWidth={"260px"} lineHeight='26px' fontSize="16px" mt="2">
-                  Our flagship product designed to shape the future with
-                  innovative technology solutions by empowering businesses and
-                  individuals with user-friendly, affordable, and accessible
-                  software.
-                </Text>
-              </CardBody>
-            </Card>
+              Explore Our <br /> Products
+            </Text>
 
-            <Card
-              w="80%"
-              bgColor="black"
-              h="400px"
-              m="auto"
-              p="0"
-              border="3px solid black"
-              borderRadius="20px"
-              color="white"
-            >
-              <CardBody w="100%">
-                <Box w={"full"}>
-                  <Image src={AntConfig} alt="B2B" />
-                </Box>
-                {/* <Text className={styles.heading} fontSize='2xl' fontWeight='bold' ml='8' mt='-10'>AntConfig</Text> */}
-                <Text
-                  className={styles.heading}
-                  fontSize="2xl"
-                  fontWeight="bold"
-                  mt="4"
+            {CardProps.map((card) => (
+              <Box key={card.title}>
+                <Box
+                  maxWidth="368px"
+                  minHeight="480px"
+                  borderRadius="20px"
+                  border="3px solid rgb(30,28,56)"
+                  bgColor="rgb(18,17,36)"
+                  pt="12px"
+                  pl="21px"
+                  pr="22px"
                 >
-                  AntConfig
-                </Text>
-                <Text maxWidth={"260px"} lineHeight='26px' fontSize="16px" mt="2">
-                  A developer-centric feature flag service with unlimited team
-                  size, awesome support, and a reasonable price tag.
-                </Text>
-              </CardBody>
-            </Card>
+                  <Box w="100%">
+                    <Box maxWidth="325px">
+                      <Image
+                        src={card.image}
+                        alt="B2B"
+                        width={325}
+                        height={273}
+                      />
+                    </Box>
+                    <Text
+                      className={styles.heading}
+                      fontSize="2xl"
+                      fontWeight="bold"
+                      ml="38px"
+                      mt="-10"
+                    >
+                      {card.title}
+                    </Text>
 
-            <Card
-              w="80%"
-              bgColor="black"
-              h="400px"
-              p="0"
-              m="auto"
-              border="3px solid black"
-              borderRadius="20px"
-              color="white"
-            >
-              <CardBody w="100%">
-                <Box w={"full"}>
-                  <Image src={Pennywise} alt="B2B" />
+                    <Text lineHeight="26px" fontSize="16px" mt="23px">
+                      {card.description}
+                    </Text>
+                  </Box>
                 </Box>
-                {/* <Text className={styles.heading} fontSize='2xl' fontWeight='bold' ml='8' mt='-10'>PennyWise</Text> */}
-                <Text
-                  className={styles.heading}
-                  fontSize="2xl"
-                  fontWeight="bold"
-                  mt={"4"}
-                >
-                  PennyWise
-                </Text>
-                <Text maxWidth={"260px"} lineHeight='26px' fontSize="16px" mt="2">
-                  (Adashe/Ajo/Esusu); Revolutionizing financial management with
-                  our suite of digital solutions.
-                </Text>
-              </CardBody>
-            </Card>
-            <Card
-              w="80%"
-              bgColor="black"
-              h="400px"
-              p="0"
-              m="auto"
-              border="3px solid black"
-              borderRadius="20px"
-              color="white"
-            >
-              <CardBody w="100%">
-                <Box w={"full"}>
-                  <Link href="">
-                    <Image src={Antfi} alt="B2B" />
-                  </Link>
-                </Box>
-                {/* <Text className={styles.heading} fontSize='2xl' fontWeight='bold' ml='8' mt='-10'>AntFi</Text> */}
-                <Text
-                  className={styles.heading}
-                  fontSize="2xl"
-                  fontWeight="bold"
-                  mt="4"
-                >
-                  AntFi
-                </Text>
-                <Text maxWidth={"260px"} lineHeight='26px' fontSize="16px" mt="2">
-                  Empowering businesses and individuals with cross-board finance
-                  solutions, making financial management simpler and more
-                  efficient.
-                </Text>
-              </CardBody>
-            </Card>
+              </Box>
+            ))}
           </SimpleGrid>
         </Box>
       </Box>
     </Box>
   );
-}
+};
 
 export default ExploreProducts;

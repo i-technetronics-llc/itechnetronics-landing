@@ -23,15 +23,16 @@ import Innovators from "../public/assets/innovators.svg";
 function TargetAudience() {
   return (
     <Box bgColor={"transparent"} >
-      <Box textAlign={"center"} maxWidth={"1000px"} m="auto">
+      <Box textAlign={"center"}  m="auto">
         <Text
-          fontSize={{base:'2xl',sm:'3xl', md:"4xl"}}
+          fontSize={{base:'2xl',sm:'3xl', md:"54px"}}
           color={"#fff"}
           className={styles.heading}
+
         >
           Our Target Audience
         </Text>
-        <Text fontSize={{base:'sm', md:'24px'}} lineHeight='39px' mx={'3'} color={"#fff"} className={styles.text}>
+        <Text fontSize={{base:'sm', md:'24px'}} lineHeight='39px'  maxWidth='1260px' color={"#fff"} className={styles.text}>
           While we serve both B2B and SaaS markets, our primary focus goes
           beyond conventional boundaries. We aim to reach everyone who can
           benefit from our innovative products and solutions, making the world

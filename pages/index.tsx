@@ -6,9 +6,11 @@ import { Box, Flex, Text, Button } from "@chakra-ui/react";
 import styles from "../styles/Home.module.css";
 import TargetAudience from "../components/TargetAudience";
 import ExploreProducts from "../components/ExploreProducts";
+// import JoinJourney from "../components/JoinJourney";
 import JoinJourney from "../components/JoinJourney";
 import Fold from "../components/Fold";
 import Footer from "../components/Footer";
+// import {CardProps} from "../components/ExploreProducts";
 
 function index() {
   return (
@@ -27,7 +29,7 @@ function index() {
         <CTA2 />
         <TargetAudience /> 
         {/* <Fold /> */}
-        <ExploreProducts />
+        <ExploreProducts  />
         {/* <Fold /> */}
 
         <JoinJourney />
