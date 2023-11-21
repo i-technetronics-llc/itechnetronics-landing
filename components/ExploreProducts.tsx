@@ -54,7 +54,7 @@ import Link from "next/link";
 
 function ExploreProducts() {
   return (
-    <Box color="white">
+    <Box color="white" mt='215px'>
       <Box maxWidth="1150px" m="auto">
         <Box mb="10" mt="16">
           <SimpleGrid
@@ -68,13 +68,14 @@ function ExploreProducts() {
             spacing={{ base: "12", lg: "16" }}
           >
             <Text
-              fontSize={"54px"}
+              fontSize={{base:"32px", md:"54px"}}
               lineHeight="52px"
+              mx={{ base: "5px", md: "0" }}
               color={"#fff"}
               textAlign={{ base: "center", md: "left" }}
               className={styles.heading}
             >
-              Explore Our <br /> Products
+              Explore Our  Products
             </Text>
 
             {CardProps.map((card) => (
@@ -88,6 +89,7 @@ function ExploreProducts() {
                   pt="12px"
                   pl="21px"
                   pr="22px"
+                  m='auto'
                 >
                   <Box w="100%">
                     <Box maxWidth="325px">

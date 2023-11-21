@@ -20,7 +20,7 @@ function index() {
         display={"flex"}
         m="auto"
         flexDirection={"column"}
-        gap="24"
+        // gap="24"
         maxWidth="1440px"
       >
         <Navbar />

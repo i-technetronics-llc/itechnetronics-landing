@@ -18,10 +18,10 @@ import styles from "../styles/Home.module.css";
 
 function test() {
   return (
-    <Box  color="#FFF" bgColor="rgb(18,17,36)" minHeight='515px' maxWidth="1332px">
+    <Box  color="#FFF" bgColor="rgb(18,17,36)" minHeight='515px' maxWidth="1332px" mt='152px' mb='100px'>
       <Text
        
-        fontSize="54px"
+        fontSize={{base:'32px', md:"54px"}}
         fontWeight="400"
         maxWidth="602px"
         m="auto"
@@ -36,7 +36,8 @@ function test() {
         fontSize="54px"
         fontWeight="400"
         maxWidth="1180px"
-        py='67px'
+        py={{base:'20px', md:'67px'}}
+        // px={{base:'12px', md:'67px'}}
         mb='62px'
         bgColor="rgb(30,28,56)"
         mx="auto"
@@ -44,11 +45,11 @@ function test() {
         textAlign="center">
     <Text
        
-       fontSize="32px"
+       fontSize={{base:'16px', md:"32px"}}
        fontWeight="500"
-       maxWidth="1090px"
+       maxWidth={{base:'340px', md:"1090px"}}
        m="auto"
-
+        px={{base:'12px', md:'0'}}
        textAlign="center"
        className={styles.text2}
      >

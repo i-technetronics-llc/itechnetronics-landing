@@ -22,7 +22,7 @@ import styles from "../styles/Home.module.css";
 import Bg from "../public/assets/cto2bg.svg";
 function CTAsection() {
   return (
-    <Box bgColor={"rgb(11,10,22)"}>
+    <Box bgColor={"rgb(11,10,22)"} mt='98px'>
       <Box maxWidth={"1200px"} m="auto">
         <SimpleGrid
           spacing={"4"}
