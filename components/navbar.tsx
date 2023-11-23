@@ -17,6 +17,7 @@ import {
   ListItem,
   ListIcon,
 } from "@chakra-ui/react";
+import { FaBars } from "react-icons/fa";
 import { Icon, createIcon } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import Link from "next/link";
@@ -25,13 +26,14 @@ import Listimg from "../public/assets/list.svg";
 import Image from "next/image";
 import styles from "../styles/Navbar.module.css";
 import { link } from "fs";
+import { useMediaQuery } from "@chakra-ui/react";
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [isMobile, setIsMobile] = useState(false);
+  // const [isMobile, setIsMobile] = useState(false);
   const [activeLink, setActiveLink] = useState<string | null>(null);
 
   const router = useRouter();
-
+  const [isMobile] = useMediaQuery("(max-width: 768px)");
   useEffect(() => {
     // Set the active link based on the current route
     if (router.pathname === "/") {
@@ -49,18 +51,18 @@ const Navbar = () => {
     }
   }, [router.pathname]);
 
-  const handleResize = () => {
-    if (window.innerWidth < 768) {
-      setIsMobile(true);
-    } else {
-      setIsMobile(false);
-    }
-  };
+  // const handleResize = () => {
+  //   if (window.innerWidth < 768) {
+  //     setIsMobile(true);
+  //   } else {
+  //     setIsMobile(false);
+  //   }
+  // };
 
-  useEffect(() => {
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener("resize", handleResize);
+  //   return () => window.removeEventListener("resize", handleResize);
+  // }, []);
 
   return (
     <Box
@@ -87,9 +89,9 @@ const Navbar = () => {
           <>
             <IconButton
               aria-label="Open menu"
-              icon={<HamburgerIcon />}
-              size="5xl"
-              variant="ghost"
+              icon={<FaBars style={{ fontSize: "1.6rem", color: "white" }} />} // Adjust styles as needed
+              size="10xl"
+              variant="none"
               color="white"
               onClick={onOpen}
             />
@@ -155,7 +157,7 @@ const Navbar = () => {
               gap={"  10"}
               alignItems={"center"}
             >
-             <Link href="/about">
+              <Link href="/about">
                 <ListItem
                   color={"rgba(255, 255, 255, 1)"}
                   display={"flex"}
@@ -163,8 +165,7 @@ const Navbar = () => {
                   style={{
                     backgroundColor:
                       activeLink === "about" ? "white" : "transparent",
-                    padding:
-                      activeLink === "about" ? "8px 16px 8px 16px" : "0",
+                    padding: activeLink === "about" ? "8px 16px 8px 16px" : "0",
                     borderRadius: activeLink === "about" ? "12px" : "0",
                     color: activeLink === "about" ? "black" : "white",
                   }}
@@ -176,9 +177,7 @@ const Navbar = () => {
                     w={3}
                     h={3}
                     color={
-                      activeLink === "about"
-                        ? "rgba(59, 130, 246, 1)"
-                        : "white"
+                      activeLink === "about" ? "rgba(59, 130, 246, 1)" : "white"
                     }
                   >
                     <path
@@ -243,7 +242,7 @@ const Navbar = () => {
               gap={"10"}
               alignItems={"center"}
             >
-           <Link href="/products">
+              <Link href="/products">
                 <ListItem
                   color={"rgba(255, 255, 255, 1)"}
                   display={"flex"}
@@ -278,9 +277,7 @@ const Navbar = () => {
                 </ListItem>
               </Link>
 
-
-
-            <Link href="/contact">
+              <Link href="/contact">
                 <ListItem
                   color={"rgba(255, 255, 255, 1)"}
                   display={"flex"}
