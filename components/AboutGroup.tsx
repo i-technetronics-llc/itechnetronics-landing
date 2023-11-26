@@ -40,29 +40,29 @@ const CustomSlider: React.FC<CustomSliderProps> = () => {
     // },
   ];
 
-  const settings: Settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    prevArrow: <CustomPrevArrow />,
-    nextArrow: <CustomNextArrow />,
-  };
+  // const settings: Settings = {
+  //   dots: false,
+  //   infinite: true,
+  //   speed: 500,
+  //   autoplay: true,
+  //   autoplaySpeed: 3000,
+  //   slidesToShow: 3,
+  //   slidesToScroll: 1,
+  //   prevArrow: <CustomPrevArrow />,
+  //   nextArrow: <CustomNextArrow />,
+  // };
 
-  const goToNext = () => {
-    if (sliderRef.current) {
-      sliderRef.current.slickNext();
-    }
-  };
+  // const goToNext = () => {
+  //   if (sliderRef.current) {
+  //     sliderRef.current.slickNext();
+  //   }
+  // };
 
-  const goToPrev = () => {
-    if (sliderRef.current) {
-      sliderRef.current.slickPrev();
-    }
-  };
+  // const goToPrev = () => {
+  //   if (sliderRef.current) {
+  //     sliderRef.current.slickPrev();
+  //   }
+  // };
 
   return (
     <>
@@ -136,24 +136,24 @@ const CustomSlider: React.FC<CustomSliderProps> = () => {
   );
 };
 
-interface CustomArrowProps {
-  onClick: () => void;
-}
+// interface CustomArrowProps {
+//   onClick: () => void;
+// }
 
-const CustomPrevArrow: React.FC<CustomArrowProps> = ({ onClick }) => {
-  return (
-    <Button onClick={onClick} colorScheme="teal" variant="outline" mx={2}>
-      Previous
-    </Button>
-  );
-};
+// const CustomPrevArrow: React.FC<CustomArrowProps> = ({ onClick }) => {
+//   return (
+//     <Button onClick={onClick} colorScheme="teal" variant="outline" mx={2}>
+//       Previous
+//     </Button>
+//   );
+// };
 
-const CustomNextArrow: React.FC<CustomArrowProps> = ({ onClick }) => {
-  return (
-    <Button onClick={onClick} colorScheme="teal" variant="outline" mx={2}>
-      Next
-    </Button>
-  );
-};
+// const CustomNextArrow: React.FC<CustomArrowProps> = ({ onClick }) => {
+//   return (
+//     <Button onClick={onClick} colorScheme="teal" variant="outline" mx={2}>
+//       Next
+//     </Button>
+//   );
+// };
 
 export default CustomSlider;
