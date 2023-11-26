@@ -72,6 +72,7 @@ const Navbar = () => {
       borderRadius={"20px"}
       mt="6"
       mx={{ base: "0", md: "10" }}
+      maxWidth={"1260px"}
       // maxWidth={'1200px'}
       // m={'auto'}
       // w='100%'
@@ -107,36 +108,110 @@ const Navbar = () => {
                 <DrawerBody>
                   <Flex flexDirection="column" gap="16" alignItems="center">
                     <List spacing={3}>
-                      <Link href="/about">
-                        <ListItem color={"rgba(255, 255, 255, 1)"}>
-                          <ListIcon
-                            as={Image}
-                            src={Listimg}
-                            w={2}
-                            h={4}
-                            color="white"
-                          />
-                          About Us
-                        </ListItem>
-                      </Link>
-                      <Link href="/core-values">
-                        <ListItem color={"rgba(255, 255, 255, 1)"}>
-                          <ListIcon as={Image} src={Listimg} w={2} h={4} />
-                          Core Values
-                        </ListItem>
-                      </Link>
-                      <Link href="/products">
-                        <ListItem color={"rgba(255, 255, 255, 1)"}>
-                          <ListIcon as={Image} src={Listimg} w={2} h={4} />
-                          Products
-                        </ListItem>
-                      </Link>
-                      <Link href="/contact">
-                        <ListItem color={"rgba(255, 255, 255, 1)"}>
-                          <ListIcon as={Image} src={Listimg} w={2} h={4} />
-                          Contact Us
-                        </ListItem>
-                      </Link>
+                    <Link href="/about">
+                <ListItem
+                  color={"rgba(255, 255, 255, 1)"}
+                  display={"flex"}
+                  alignItems={"center"}
+                  mb='12px'
+                >
+                  <Icon
+                    viewBox="0 0 200 200"
+                    mr="2"
+                    w={3}
+                    h={3}
+                    color={
+                      activeLink === "about" ? "rgba(59, 130, 246, 1)" : "white"
+                    }
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M 100, 100 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0"
+                    />
+                  </Icon>
+                  About
+                </ListItem>
+              </Link>
+              <Link href="/core-values">
+                <ListItem
+                  color={"rgba(255, 255, 255, 1)"}
+                  display={"flex"}
+                  alignItems={"center"}
+                  mb='12px'
+                >
+                  <Icon
+                    viewBox="0 0 200 200"
+                    mr="2"
+                    w={3}
+                    h={3}
+                    color={
+                      activeLink === "core-values"
+                        ? "rgba(59, 130, 246, 1)"
+                        : "white"
+                    }
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M 100, 100 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0"
+                    />
+                  </Icon>
+                  Core Values
+                </ListItem>
+              </Link>
+              <Link href="/products">
+                <ListItem
+                  color={"rgba(255, 255, 255, 1)"}
+                  display={"flex"}
+                  mb='12px'
+                  alignItems={"center"}
+                >
+                  <Icon
+                    viewBox="0 0 200 200"
+                    mr="2"
+                    w={3}
+                    h={3}
+                    color={
+                      activeLink === "products"
+                        ? "rgba(59, 130, 246, 1)"
+                        : "white"
+                    }
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M 100, 100 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0"
+                    />
+                  </Icon>
+                  Products
+                </ListItem>
+              </Link>
+                    
+              <Link href="/contact">
+                <ListItem
+                mb='12px'
+                  color={"rgba(255, 255, 255, 1)"}
+                  display={"flex"}
+                  alignItems={"center"}
+       
+                >
+                  <Icon
+                    viewBox="0 0 200 200"
+                    mr="2"
+                    w={3}
+                    h={3}
+                    color={
+                      activeLink === "contact"
+                        ? "rgba(59, 130, 246, 1)"
+                        : "white"
+                    }
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M 100, 100 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0"
+                    />
+                  </Icon>
+                  Contact
+                </ListItem>
+              </Link>
                     </List>
                   </Flex>
                 </DrawerBody>
