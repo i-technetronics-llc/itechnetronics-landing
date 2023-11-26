@@ -37,17 +37,18 @@ function CTAsection() {
         <Box
           maxWidth="1100px"
           bgColor="rgb(18,17,36)"
-          p="24px"
+          p={{base:'12px', md:"24px"}}
           mt="64px"
           mx="auto"
         >
           <Box
             mx="auto"
+            
             // w={{base:'100%', md:"80%"}}
             // maxWidth='1052px'
             // border={"30px solid rgb(18, 17, 36)"}
             borderRadius="5px"
-            display={{ base: "none", sm: "block" }}
+            // display={{ base: "none", sm: "block" }}
           >
             <Image src={Heroimg} alt="hero" />
           </Box>
@@ -55,7 +56,7 @@ function CTAsection() {
             mx="auto"
             // w={{ base: "100%" }}
             borderRadius="5px"
-            display={{ base: "block", sm: "none" }}
+            display={{ base: "none", sm: "none" }}
             mt="20px"
           >
             <Image src={Heroimg2} alt="hero" />

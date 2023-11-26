@@ -45,11 +45,11 @@ function test() {
         textAlign="center">
     <Text
        
-       fontSize={{base:'16px', md:"32px"}}
+       fontSize={{base:'18px', md:"32px"}}
        fontWeight="500"
        maxWidth={{base:'340px', md:"1090px"}}
        m="auto"
-        px={{base:'12px', md:'0'}}
+        px={{base:'8px', md:'0'}}
        textAlign="center"
        className={styles.text2}
      >
